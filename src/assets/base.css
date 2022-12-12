@@ -1,3 +1,7 @@
+:root {
+  overflow-x: hidden;
+}
+
 img{
   -khtml-user-select: none;
   -o-user-select: none;

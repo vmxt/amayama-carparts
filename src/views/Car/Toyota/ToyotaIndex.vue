@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <nav
     class="mt-5 container flex flex-wrap items-center justify-between mx-auto"
@@ -23,13 +21,26 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-          <router-link :to="{ name: 'catalogues' }" class="ml-3">
-            <p class="font-bold hover:underline">
-              Genuine Online Car Parts Catalogue
-            </p>
+          <router-link :to="{ name: 'toyota' }" class="ml-3">
+            <p class="font-bold hover:underline">Toyota</p>
           </router-link>
         </div>
       </li>
     </ol>
   </nav>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+        <h2
+          class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+        >
+          TOYOTA
+        </h2>
+        <div
+          class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
+        />
+      </div>
+    </div>
+  </section>
 </template>

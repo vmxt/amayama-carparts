@@ -162,62 +162,62 @@
       >
         <ul class="px-5">
           <li>
-            <a
-              href="#"
+            <router-link
               class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'toyota' }"
             >
               <p class="text-light">Toyota</p>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a
-              href="#"
+            <router-link
               class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'mitsubishi' }"
             >
               <p class="text-light">Mitsubishi</p>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a
-              href="#"
+            <router-link
               class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'honda' }"
             >
               <p class="text-light">Honda</p>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a
-              href="#"
-              class="block p-3 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+            <router-link
+              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'suzuki' }"
             >
               <p class="text-light">Suzuki</p>
-            </a>
+            </router-link>
           </li>
         </ul>
         <ul class="border-r border-gray-200 px-5">
           <li>
-            <a
-              href="#"
-              class="block p-3 rounded hover:bg-gray-100 dark:hover:bg-gray-700"
+            <router-link
+              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'mazda' }"
             >
               <p class="text-light">Mazda</p>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a
-              href="#"
+            <router-link
               class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'nissan' }"
             >
               <p class="text-light">Nissan</p>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a
-              href="#"
+            <router-link
               class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              :to="{ name: 'subaru' }"
             >
               <p class="text-light">Subaru</p>
-            </a>
+            </router-link>
           </li>
         </ul>
         <ul class="px-5">

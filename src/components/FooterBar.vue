@@ -35,7 +35,12 @@ export default {
           <p class="mr-4 hover:underline md:mr-6">特定商取引法に基づく表記</p>
         </router-link>
         <li>
-          <p class="mr-4 hover:underline md:mr-6">Facebook</p>
+          <a
+            href="https://www.facebook.com/AmayamaTrading/"
+            target="_blank"
+            class="mr-4 hover:underline md:mr-6"
+            >Facebook</a
+          >
         </li>
       </ul>
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"

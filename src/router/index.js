@@ -22,6 +22,43 @@ const router = createRouter({
       component: () => import("@/views/Header/MakeInquiry.vue"),
     },
 
+    // Header Car
+    {
+      path: "/catalogs/toyota",
+      name: "toyota",
+      component: () => import("@/views/Car/Toyota/ToyotaIndex.vue"),
+    },
+    {
+      path: "/catalogs/honda",
+      name: "honda",
+      component: () => import("@/views/Car/Honda/HondaIndex.vue"),
+    },
+    {
+      path: "/catalogs/mitsubishi",
+      name: "mitsubishi",
+      component: () => import("@/views/Car/Mitsubishi/MitsubishiIndex.vue"),
+    },
+    {
+      path: "/catalogs/suzuki",
+      name: "suzuki",
+      component: () => import("@/views/Car/Suzuki/SuzukiIndex.vue"),
+    },
+    {
+      path: "/catalogs/mazda",
+      name: "mazda",
+      component: () => import("@/views/Car/Mazda/MazdaIndex.vue"),
+    },
+    {
+      path: "/catalogs/nissan",
+      name: "nissan",
+      component: () => import("@/views/Car/Nissan/NissanIndex.vue"),
+    },
+    {
+      path: "/catalogs/subaru",
+      name: "subaru",
+      component: () => import("@/views/Car/Subaru/SubaruIndex.vue"),
+    },
+
     // Footer
     {
       path: "/about",

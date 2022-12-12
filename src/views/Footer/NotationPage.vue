@@ -32,82 +32,180 @@
   <section class="bg-white dark:bg-gray-900">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-        <div
-          class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400"
-        >
-          <h2
-            class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
-          >
-            特定商取引法に基づく表記
-          </h2>
-          <div
-            class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
-          />
-        </div>
-        <p class="mb-4 font-medium">Date of establishment: November 1, 2004.</p>
-        <p class="mb-10 font-light">
-          Amayama Trading Co., Ltd supplies new OEM (genuine) parts for cars
-          manufactured by Japanese automakers and ships parts worldwide with
-          fast delivery and reasonable cost to the client. The company
-          specializes in supplying parts for Japanese domestic market (JDM)
-          models exported from Japan to destinations around the world: Toyota,
-          Lexus, Nissan, Infiniti, Mitsubishi, Honda, Mazda, Subaru, Suzuki. We
-          understand the difficulties in dealing with local parts suppliers when
-          it comes to JDM models and we strive to make the acquisition of the
-          desired parts as easy as possible. Amayama Trading Co. Ltd is located
-          in Mino City, in northern Osaka, Japan and has direct contact with all
-          Japanese automakers, so you can be sure that your parts are genuine
-          OEM items and maintain your vehicles original performance and function
-          as the manufacturer intended.
-        </p>
-      </div>
-
-      <div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
         <h2
-          class="mb-10 text-3xl tracking-tight font-bold text-gray-900 dark:text-white"
+          class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
         >
-          Warehouse Locations
+          特定商取引法に基づく表記
         </h2>
-        <p class="mb-4 text-2xl font-medium">Japan</p>
-        <p class="mb-4 font-light">
-          Amayama Trading Co., Ltd can supply general parts for all Japanese
-          makes, either supplied from the manufacturer or from stock on hand in
-          the warehouse. The warehouse is capable of handling large sea or air
-          freight orders, right down to single part small packages.
-        </p>
-        <p class="mb-10 font-light">
-          Amayama Trading Co., Ltd 562-0031 Osaka, Mino-shi, Onoharahigashi
-          4-22-3 Storehouse Kita-no-mori Ph: 050-3786-7884
-        </p>
-
-        <p class="mb-4 text-2xl font-medium">Australia</p>
-        <p class="mb-4 font-light">
-          Amayama's Australian branch was originally established in 2010 as a
-          transit warehouse for all Australian orders. Now trading as Amayama
-          Australia Pty Ltd, houses 1000's of parts for Australian customers and
-          those wishing to purchase stock on hand from abroad. Amayama Australia
-          also has in stock Denso brand spark plugs and cabin air filters which
-          are the highest quality at very competitive prices.
-        </p>
-        <p class="mb-10 font-light">
-          Amayama Trading Co., Ltd Amayama Australia Pty Ltd. Unit 11, 22 - 24
-          Norman Street, Peakhurst, Sydney, NSW, 2210.
-        </p>
-
-        <p class="mb-4 text-2xl font-medium">UAE</p>
-        <p class="mb-4 font-light">
-          Amayama's UAE branch trading as Dekada Trading FZE can supply general
-          part numbers for Japanese and Korean cars but also specializes in
-          supplying LHD (left hand drive) parts for markets such as North
-          America and Europe. If parts cannot be supplied from Japan, our UAE
-          branch may be able to supply them. We also have a growing amount of
-          stock on hand in the Dubai warehouse to facilitate fast delivery of
-          parts.
-        </p>
-        <p class="mb-10 font-light">
-          Dekada Trading FZE UAE, Sharjah, SAIF Zone, Q1-06-078/C, P.O.Box
-          122534 Ph: +97165528270 TRN: 100388007500003
-        </p>
+        <div
+          class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
+        />
+      </div>
+      <div class="overflow-x-auto relative">
+        <table
+          class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+        >
+          <thead
+            class="border-b border-gray-200 text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400"
+          >
+            <tr>
+              <th scope="col" class="py-3 px-6 rounded-l-lg">販売社名</th>
+              <th scope="col" class="py-3 px-6">
+                有限会社アマヤマトレーディング
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                運営統括責任者
+              </th>
+              <td class="py-4 px-6">池上智太</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                所在地
+              </th>
+              <td class="py-4 px-6">大阪府箕面市小野原東4-22-3</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                電話番号
+              </th>
+              <td class="py-4 px-6">050-3786-7884</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                メールアドレス
+              </th>
+              <td class="py-4 px-6">sales@amayama.co.jp</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                販売URL
+              </th>
+              <td class="py-4 px-6">https://www.amayama.com/en</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                お支払い方法
+              </th>
+              <td class="py-4 px-6">
+                クレジットカード<br />
+                Paypal<br />
+                銀行振り込み：三井住友・三菱東京ＵＦＪ・池田泉州<br />
+              </td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                商品代金以外の必要金額
+              </th>
+              <td class="py-4 px-6">
+                消費税（日本国内販売の場合）、販売手数料（販売価格に含む）、配送料（ご注文時にお知らせします）、通関にかかる関税・通関手数料など（お受け取り時に
+                配送業者からのご請求）
+              </td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                注文有効期限
+              </th>
+              <td class="py-4 px-6">
+                注文確定後7日以内にご入金お願いいたします。<br />
+                30日間入金がない場合は、キャンセルとさせていただきます。
+              </td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                商品引渡し時期
+              </th>
+              <td class="py-4 px-6">
+                指定日が無ければ入金確認後5営業日以内で発送致します。<br />
+                ただし、商品の在庫状況によってはお届け日が遅れる場合があります。発送が遅れる場合は、速やかにご連絡をいたします。
+              </td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                商品引渡し方法
+              </th>
+              <td class="py-4 px-6">当方にて手配後、運送会社による配送</td>
+            </tr>
+            <tr
+              class="bg-white border-t border-b border-gray-200 dark:bg-gray-800"
+            >
+              <th
+                scope="row"
+                class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                返品・不良品について
+              </th>
+              <td class="py-4 px-6">
+                「不良品・当社の商品の間違え」の場合は当社が負担いたします。<br />
+                配送途中の破損などの事故がございましたら、弊社までご連絡下さい。<br />
+                送料・手数料ともに弊社負担で早急に新品をご送付致します。<br />
+                <div class="pt-5" />
+                <span>【返品対象】</span><br />
+                「不良品・当社の商品の間違え」の場合<br />
+                <div class="pt-5" />
+                <span>【返品時期】</span><br />
+                ご購入後14日以内にご連絡があった場合に返金可能となります。<br />
+                <div class="pt-5" />
+                <span>【返品方法】</span><br />
+                メールにて返金要請してください。<br />
+                14日以内にご購入代金を指定の口座へお振込いたします。
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
