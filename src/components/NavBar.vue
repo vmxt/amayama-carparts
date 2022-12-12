@@ -125,7 +125,7 @@
             <button
               id="mega-menu-full-dropdown-button"
               data-collapse-toggle="mega-menu-full-dropdown"
-              class="flex items-center justify-between underline decoration-dotted w-full py-2 pl-3 pr-4 font-medium text-gray-700 hover:bg-gray-100 lg:text-3xl text-xl rounded md:w-auto md:hover:bg-transparent md:border-0 md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-rose-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              class="flex items-center justify-between underline decoration-dotted w-full py-2 pl-3 pr-4 font-medium text-blue-400 hover:bg-gray-100 lg:text-3xl text-xl rounded md:w-auto md:hover:bg-transparent md:border-0 md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-rose-500 md:dark:hover:bg-transparent dark:border-gray-700"
             >
               Parts Catalogues
               <svg
@@ -146,7 +146,7 @@
             <router-link
               :to="{ name: 'inquiry' }"
               href="#"
-              class="block py-2 pl-3 pr-4 lg:text-3xl text-xl text-gray-700 rounded font-medium hover:text-rose-700 md:hover:bg-transparent md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="block py-2 pl-3 pr-4 lg:text-3xl text-xl text-blue-400 rounded font-medium hover:text-rose-700 md:hover:bg-transparent md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >Make Inquiry</router-link
             >
           </li>
@@ -163,60 +163,60 @@
         <ul class="px-5">
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'toyota' }"
             >
-              <p class="text-light">Toyota</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Toyota</p>
             </router-link>
           </li>
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'mitsubishi' }"
             >
-              <p class="text-light">Mitsubishi</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Mitsubishi</p>
             </router-link>
           </li>
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'honda' }"
             >
-              <p class="text-light">Honda</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Honda</p>
             </router-link>
           </li>
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'suzuki' }"
             >
-              <p class="text-light">Suzuki</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Suzuki</p>
             </router-link>
           </li>
         </ul>
         <ul class="border-r border-gray-200 px-5">
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'mazda' }"
             >
-              <p class="text-light">Mazda</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Mazda</p>
             </router-link>
           </li>
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'nissan' }"
             >
-              <p class="text-light">Nissan</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Nissan</p>
             </router-link>
           </li>
           <li>
             <router-link
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
               :to="{ name: 'subaru' }"
             >
-              <p class="text-light">Subaru</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Subaru</p>
             </router-link>
           </li>
         </ul>
@@ -225,15 +225,15 @@
           <li>
             <a
               href="#"
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg dark:hover:bg-rose-700"
             >
-              <p class="text-light">Accessories</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Accessories</p>
             </a>
             <a
               href="#"
-              class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+              class="block p-3 rounded-lg dark:hover:bg-rose-700"
             >
-              <p class="text-light">Apparel</p>
+              <p class="text-light text-blue-500 hover:text-rose-500">Apparel</p>
             </a>
           </li>
         </ul>

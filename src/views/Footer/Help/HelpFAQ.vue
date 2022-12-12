@@ -3,7 +3,7 @@
     class="mt-5 container flex flex-wrap items-center justify-between mx-auto"
     aria-label="Breadcrumb"
   >
-    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <ol class="inline-flex mx-5 items-center space-x-1 md:space-x-3">
       <router-link :to="{ name: 'index' }">
         <p class="font-light hover:underline">Home</p>
       </router-link>
@@ -49,7 +49,7 @@
   </nav>
 
   <aside
-    class="mt-5 container flex flex-wrap items-center justify-between mx-auto"
+    class="mt-5 px-5 container flex flex-wrap items-center justify-between mx-auto"
   >
     <div
       class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
