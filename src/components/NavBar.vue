@@ -11,72 +11,84 @@
 
 <template>
   <nav
-    class="bg-white border-gray-200 border-b px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900"
+    class="bg-white border-b border-gray-200 px-2 md:px-4 py-2.5 dark:bg-gray-900"
   >
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
-      <router-link :to="{ name: 'index' }" class="flex">
-        <a class="logo" />
-      </router-link>
-      <div class="flex md:order-2">
+    <div
+      class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+    >
+      <router-link :to="{ name: 'index' }" class="logo" />
+      <div class="flex items-center md:order-2">
         <button
+          id="dropdownSearchButton"
+          data-dropdown-toggle="dropdownSearch"
+          data-dropdown-placement="bottom"
+          class="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-rose-600 dark:hover:bg-rose-700 dark:focus:ring-blue-800"
           type="button"
-          data-collapse-toggle="navbar-search"
-          aria-controls="navbar-search"
-          aria-expanded="false"
-          class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
         >
+          Search Parts
           <svg
-            class="w-5 h-5"
+            class="ml-2 w-4 h-4"
             aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-              clip-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
             ></path>
           </svg>
-          <span class="sr-only">Search</span>
         </button>
-        <div class="relative hidden md:block">
-          <div
-            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-          >
-            <svg
-              class="w-5 h-5 text-gray-500"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-            <span class="sr-only">Search icon</span>
+
+        <!-- Dropdown menu -->
+        <div
+          id="dropdownSearch"
+          class="hidden z-10 w-60 bg-white rounded shadow dark:bg-gray-700"
+        >
+          <div class="p-3">
+            <label for="input-group-search" class="sr-only">Search</label>
+            <div class="relative">
+              <div
+                class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="input-group-search"
+                class="block p-2 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-rose-500 focus:border-rose-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rose-500 dark:focus:border-rose-500"
+                placeholder="Search by part number"
+              />
+            </div>
           </div>
-          <input
-            type="text"
-            id="search-navbar"
-            class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-rose-500 focus:border-rose-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rose-500 dark:focus:border-rose-500"
-            placeholder="Search by part number"
-          />
         </div>
+
         <button
-          data-collapse-toggle="navbar-search"
+          data-collapse-toggle="mega-menu"
           type="button"
-          class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-search"
+          class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="mega-menu"
           aria-expanded="false"
         >
-          <span class="sr-only">Open menu</span>
+          <span class="sr-only">Open main menu</span>
           <svg
-            class="w-6 h-6"
             aria-hidden="true"
+            class="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -90,46 +102,24 @@
         </button>
       </div>
       <div
-        class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-        id="navbar-search"
+        id="mega-menu"
+        class="hidden justify-between items-center w-full text-sm md:flex md:w-auto md:order-1"
       >
-        <div class="relative mt-3 md:hidden">
-          <div
-            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-          >
-            <svg
-              class="w-5 h-5 text-gray-500"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </div>
-          <input
-            type="text"
-            id="search-navbar"
-            class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-rose-500 focus:border-rose-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rose-500 dark:focus:border-rose-500"
-            placeholder="Search by part number"
-          />
-        </div>
         <ul
-          class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex flex-col mt-4 font-medium md:flex-row md:space-x-8 md:mt-0"
         >
           <li>
             <button
-              id="mega-menu-full-dropdown-button"
-              data-collapse-toggle="mega-menu-full-dropdown"
-              class="flex items-center justify-between underline decoration-dotted w-full py-2 pl-3 pr-4 font-medium text-blue-400 hover:bg-gray-100 lg:text-3xl text-xl rounded md:w-auto md:hover:bg-transparent md:border-0 md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-rose-500 md:dark:hover:bg-transparent dark:border-gray-700"
+              id="mega-menu-dropdown-button"
+              data-dropdown-toggle="mega-menu-dropdown"
+              class="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-blue-400 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-rose-500 md:dark:hover:bg-transparent dark:border-gray-700"
             >
-              Parts Catalogues
+              <p class="text-3xl underline underline-dotted">
+                Parts Catalogues
+              </p>
               <svg
-                class="w-5 h-5 ml-1"
+                aria-hidden="true"
+                class="ml-1 w-5 h-5 md:w-4 md:h-4"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,100 +131,85 @@
                 ></path>
               </svg>
             </button>
+            <div
+              id="mega-menu-dropdown"
+              class="grid hidden absolute z-10 grid-cols-2 w-auto text-sm bg-white rounded-lg border border-gray-100 shadow-md dark:border-gray-700 md:grid-cols-2 dark:bg-gray-700"
+            >
+              <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                <ul
+                  class="space-y-5"
+                  aria-labelledby="mega-menu-dropdown-button"
+                >
+                  <li>
+                    <router-link
+                      :to="{ name: 'toyota' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Toyota
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{ name: 'mitsubishi' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Mitsubishi
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{ name: 'honda' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Honda
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{ name: 'mazda' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Mazda
+                    </router-link>
+                  </li>
+                </ul>
+              </div>
+              <div class="p-4 pb-0 text-gray-900 md:pb-5 dark:text-white">
+                <ul class="space-y-4">
+                  <li>
+                    <router-link
+                      :to="{ name: 'nissan' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Nissan
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{ name: 'subaru' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Subaru
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link
+                      :to="{ name: 'suzuki' }"
+                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                    >
+                      Suzuki
+                    </router-link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <router-link
               :to="{ name: 'inquiry' }"
-              href="#"
-              class="block py-2 pl-3 pr-4 lg:text-3xl text-xl text-blue-400 rounded font-medium hover:text-rose-700 md:hover:bg-transparent md:hover:text-rose-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              class="text-3xl block py-2 pr-4 pl-3 text-blue-400 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-rose-700 md:p-0 dark:text-blue-400 md:dark:hover:text-rose-500 dark:hover:bg-gray-700 dark:hover:text-rose-500 md:dark:hover:bg-transparent dark:border-gray-700"
               >Make Inquiry</router-link
             >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      id="mega-menu-full-dropdown"
-      class="z-100 sm:absolute hidden sm:w-[40rem] left-[30vw] items-center flex flex-wrap mt-1 border rounded border-gray-200 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
-    >
-      <div
-        class="grid px-4 py-5 text-gray-900 dark:text-white grid-cols-3 md:px-10"
-      >
-        <ul class="px-5">
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'toyota' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Toyota</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'mitsubishi' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Mitsubishi</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'honda' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Honda</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'suzuki' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Suzuki</p>
-            </router-link>
-          </li>
-        </ul>
-        <ul class="border-r border-gray-200 px-5">
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'mazda' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Mazda</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'nissan' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Nissan</p>
-            </router-link>
-          </li>
-          <li>
-            <router-link
-              class="block p-3 rounded-lg hover:text-rose-500 dark:hover:bg-rose-700"
-              :to="{ name: 'subaru' }"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Subaru</p>
-            </router-link>
-          </li>
-        </ul>
-        <ul class="px-5">
-          <p class="font-medium text-xl p-3">Misc.</p>
-          <li>
-            <a
-              href="#"
-              class="block p-3 rounded-lg dark:hover:bg-rose-700"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Accessories</p>
-            </a>
-            <a
-              href="#"
-              class="block p-3 rounded-lg dark:hover:bg-rose-700"
-            >
-              <p class="text-light text-blue-500 hover:text-rose-500">Apparel</p>
-            </a>
           </li>
         </ul>
       </div>

@@ -52,7 +52,7 @@
           src="@/assets/index/hero_2.jpg"
           draggable="false"
         />
-        <div class="absolute top-[21em] left-[50vw] w-full">
+        <div class="absolute top-[22.5em] left-[50vw] w-full">
           <p class="hidden lg:block absolute py-5 text-sm">
             Search For Parts Here
           </p>
@@ -61,8 +61,8 @@
           </p>
         </div>
 
-        <div class="absolute top-[33em] left-[50vw] w-full">
-          <p class="hidden lg:block absolute text-lg text-left">
+        <div class="absolute top-[34.5em] left-[50vw] w-full">
+          <p class="hidden lg:block text-lg text-left">
             You can get genuine part <br />numbers from
             <router-link
               class="text-blue-600 hover:underline"
@@ -71,9 +71,7 @@
             >
             of our partners
           </p>
-          <p
-            class="hidden lg:block absolute pt-4 top-[5.5em] text-sm text-left"
-          >
+          <p class="hidden lg:block pt-4 top-[5.5em] text-sm text-left">
             If you can't find a part number, just describe<br />the required
             part
             <router-link

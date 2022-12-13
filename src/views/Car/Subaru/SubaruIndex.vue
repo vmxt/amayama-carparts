@@ -21,7 +21,7 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-          <router-link :to="{ name: 'subaru' }" class="ml-3 ">
+          <router-link :to="{ name: 'subaru' }" class="ml-3">
             <p class="font-bold hover:underline">Subaru</p>
           </router-link>
         </div>

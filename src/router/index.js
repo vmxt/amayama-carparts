@@ -10,7 +10,35 @@ const router = createRouter({
       component: () => import("@/views/IndexPage.vue"),
       meta: {
         title: "Amayama | Genuine Car Parts Import",
-      }
+      },
+    },
+
+    // 404
+    {
+      path: "/:pathMatch(.*)*",
+      name: "404",
+      component: () => import("@/views/Session/404Page.vue"),
+      meta: {
+        title: "Page Not Found",
+      },
+    },
+
+    // Session
+    {
+      path: "/sign-up",
+      name: "sign-up",
+      component: () => import("@/views/Session/SignUpPage.vue"),
+      meta: {
+        title: "Sign Up",
+      },
+    },
+    {
+      path: "/reset-password",
+      name: "reset-password",
+      component: () => import("@/views/Session/ForgotPass.vue"),
+      meta: {
+        title: "Reset Password",
+      },
     },
 
     // Header
@@ -20,7 +48,7 @@ const router = createRouter({
       component: () => import("@/views/Header/PartsCatalogues.vue"),
       meta: {
         title: "Parts Catalogues",
-      }
+      },
     },
     {
       path: "/inquiry",
@@ -28,7 +56,7 @@ const router = createRouter({
       component: () => import("@/views/Header/MakeInquiry.vue"),
       meta: {
         title: "Make Inquiry",
-      }
+      },
     },
 
     // Header Car
@@ -38,7 +66,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Toyota/ToyotaIndex.vue"),
       meta: {
         title: "Catalogs - Toyota",
-      }
+      },
     },
     {
       path: "/catalogs/honda",
@@ -46,7 +74,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Honda/HondaIndex.vue"),
       meta: {
         title: "Catalogs - Honda",
-      }
+      },
     },
     {
       path: "/catalogs/mitsubishi",
@@ -54,7 +82,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Mitsubishi/MitsubishiIndex.vue"),
       meta: {
         title: "Catalogs - Mitsubishi",
-      }
+      },
     },
     {
       path: "/catalogs/suzuki",
@@ -62,7 +90,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Suzuki/SuzukiIndex.vue"),
       meta: {
         title: "Catalogs - Suzuki",
-      }
+      },
     },
     {
       path: "/catalogs/mazda",
@@ -70,7 +98,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Mazda/MazdaIndex.vue"),
       meta: {
         title: "Catalogs - Mazda",
-      }
+      },
     },
     {
       path: "/catalogs/nissan",
@@ -78,7 +106,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Nissan/NissanIndex.vue"),
       meta: {
         title: "Catalogs - Nissan",
-      }
+      },
     },
     {
       path: "/catalogs/subaru",
@@ -86,7 +114,7 @@ const router = createRouter({
       component: () => import("@/views/Car/Subaru/SubaruIndex.vue"),
       meta: {
         title: "Catalogs - Subaru",
-      }
+      },
     },
 
     // Footer
@@ -96,7 +124,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/AboutUs.vue"),
       meta: {
         title: "Amayama - About",
-      }
+      },
     },
     {
       path: "/help",
@@ -104,7 +132,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/HelpPage.vue"),
       meta: {
         title: "Amayama - Help",
-      }
+      },
     },
     {
       path: "/notation",
@@ -112,7 +140,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/NotationPage.vue"),
       meta: {
         title: "Amayama - 特定商取引法に基づく表記",
-      }
+      },
     },
     {
       path: "/privacy-policy",
@@ -120,7 +148,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/PrivacyPolicy.vue"),
       meta: {
         title: "Amayama - Privacy Policy",
-      }
+      },
     },
     {
       path: "/terms",
@@ -128,7 +156,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/TermsOfUse.vue"),
       meta: {
         title: "Amayama - Terms of Use",
-      }
+      },
     },
     {
       path: "/shipping-calculator",
@@ -136,7 +164,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/ShippingCalculator.vue"),
       meta: {
         title: "Amayama - Shipping Calculator",
-      }
+      },
     },
 
     // Footer (Help.Vue)
@@ -146,7 +174,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/Help/HelpFAQ.vue"),
       meta: {
         title: "Amayama - Help FAQ",
-      }
+      },
     },
     {
       path: "/help/how-to-buy",
@@ -154,7 +182,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/Help/HowToBuy.vue"),
       meta: {
         title: "Amayama - How to Buy",
-      }
+      },
     },
     {
       path: "/help/international-shipping",
@@ -162,7 +190,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/Help/InternationalShipping.vue"),
       meta: {
         title: "Amayama - International Shipping",
-      }
+      },
     },
     {
       path: "/help/shipping-limitations",
@@ -170,7 +198,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/Help/ShippingLimitations.vue"),
       meta: {
         title: "Amayama - Shipping Limitations",
-      }
+      },
     },
     {
       path: "/help/warranty-and-returns",
@@ -178,7 +206,7 @@ const router = createRouter({
       component: () => import("@/views/Footer/Help/WarrantyAndReturns.vue"),
       meta: {
         title: "Amayama - Warranty and Returns",
-      }
+      },
     },
   ],
 });
