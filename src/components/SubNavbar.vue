@@ -1,6 +1,5 @@
 <script setup>
 import { Icon } from "@iconify/vue";
-import Modal from "./PopModal.vue";
 </script>
 
 <template>
@@ -12,12 +11,11 @@ import Modal from "./PopModal.vue";
     >
       <div class="flex items-center" />
       <div class="flex items-center">
-        <a
-          href="#"
+        <router-link
+          :to="{ name: 'sign-in' }"
           type="button"
-          data-modal-toggle="authentication-modal"
           class="text-md mx-2 underline underline-dotted font-medium text-blue-400 hover:text-rose-800 dark:text-rose-500 hover:underline"
-          >Log In</a
+          >Log In</router-link
         >
         <span>or</span>
         <router-link
@@ -33,7 +31,6 @@ import Modal from "./PopModal.vue";
         />
         <span class="text-sm">Cart is Empty</span>
       </div>
-      <Modal />
     </div>
   </nav>
 </template>

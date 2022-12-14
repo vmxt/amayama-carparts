@@ -43,7 +43,6 @@
           </svg>
         </button>
 
-        <!-- Dropdown menu -->
         <div
           id="dropdownSearch"
           class="hidden z-10 w-60 bg-white rounded shadow dark:bg-gray-700"
@@ -143,7 +142,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'toyota' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Toyota
                     </router-link>
@@ -151,7 +150,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'mitsubishi' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Mitsubishi
                     </router-link>
@@ -159,7 +158,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'honda' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Honda
                     </router-link>
@@ -167,7 +166,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'mazda' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Mazda
                     </router-link>
@@ -179,7 +178,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'nissan' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Nissan
                     </router-link>
@@ -187,7 +186,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'subaru' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Subaru
                     </router-link>
@@ -195,7 +194,7 @@
                   <li>
                     <router-link
                       :to="{ name: 'suzuki' }"
-                      class="text-lg text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
+                      class="text-lg text-blue-400 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500"
                     >
                       Suzuki
                     </router-link>

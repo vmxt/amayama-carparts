@@ -25,6 +25,14 @@ const router = createRouter({
 
     // Session
     {
+      path: "/sign-in",
+      name: "sign-in",
+      component: () => import("@/views/Session/SignInPage.vue"),
+      meta: {
+        title: "Sign In",
+      },
+    },
+    {
       path: "/sign-up",
       name: "sign-up",
       component: () => import("@/views/Session/SignUpPage.vue"),
@@ -43,11 +51,11 @@ const router = createRouter({
 
     // Header
     {
-      path: "/catalogs",
+      path: "/genuine-catalogs",
       name: "catalogues",
       component: () => import("@/views/Header/PartsCatalogues.vue"),
       meta: {
-        title: "Parts Catalogues",
+        title: "Genuine Catalogs",
       },
     },
     {
